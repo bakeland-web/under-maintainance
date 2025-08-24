@@ -1,5 +1,16 @@
 import type { Metadata } from 'next';
-import './globals.css';
+import localFont from 'next/font/local';
+import '@/styles/globals.css';
+
+export const upheavalTT = localFont({
+  src: '../../public/fonts/UpheavalTT.ttf',
+  variable: '--font-upheaval-tt',
+});
+
+export const pixellari = localFont({
+  src: '../../public/fonts/Pixellari.ttf',
+  variable: '--font-pixellari',
+});
 
 export const metadata: Metadata = {
   title: 'Bakeland',
@@ -13,7 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body>{children}</body>
+      <body
+        className={`${upheavalTT.variable} ${pixellari.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

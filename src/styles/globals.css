@@ -1,5 +1,62 @@
 @import 'tailwindcss';
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+@theme inline {
+  --color-*: initial;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-light-yellow: #fffca1;
+  --color-wood-100: #e3c69d;
+  --color-wood-200: #d5aa71;
+  --color-wood-300: #c98d61;
+  --color-wood-400: #bc7354;
+  --color-wood-500: #a05b47;
+  --color-wood-600: #743320;
+  --color-steel-100: #9cace2;
+  --color-steel-200: #65668b;
+  --color-steel-300: #4c4d7c;
+  --color-steel-400: #3f3a5a;
+  --color-steel-500: #15175e;
+  --color-green-100: #accb7b;
+  --color-green-200: #75a743;
+  --color-green-300: #468232;
+  --color-green-400: #25562e;
+  --color-grey-100: #7c9298;
+  --color-grey-200: #47545b;
+  --color-grey-300: #364652;
+  --color-grey-400: #272c33;
+  --color-blue-100: #1f93ff;
+  --color-blue-200: #0052ff;
+  --color-blue-300: #0035bd;
+  --color-blue-400: #001370;
+  --color-red-100: #ff5d41;
+  --color-red-200: #f23131;
+  --color-red-300: #d30408;
+  --color-red-400: #87090b;
+  --color-lavender-100: #8b9aff;
+  --color-lavender-200: #6c54f8;
+  --color-lavender-300: #5d25cd;
+  --color-lavender-400: #482197;
+  --color-orange-100: #ffb041;
+  --color-orange-200: #fc750c;
+  --color-orange-300: #e05429;
+  --color-orange-400: #962a0f;
+  --font-upheaval-tt: var(--font-upheaval-tt), Arial, Helvetica, sans-serif;
+  --font-pixellari: var(--font-pixellari), Arial, Helvetica, sans-serif;
+  --text-shadow-*: initial;
+  --text-shadow-flat: 0 0;
+  --text-shadow-elevated: 0 0.1em 0.05em rgba(0, 0, 0, 0.17);
+  --text-shadow-primary: 0 0.2em 0.2em rgba(0, 0, 0, 0.25);
+}
+
+@utility text-stroke-* {
+  --tw-text-stroke-color: initial;
+  filter: drop-shadow(0 0.2125em var(--tw-text-stroke-color))
+    drop-shadow(-0.1em 0 var(--tw-text-stroke-color))
+    drop-shadow(0 -0.0875em var(--tw-text-stroke-color))
+    drop-shadow(0.1em 0 var(--tw-text-stroke-color))
+    drop-shadow(--value(--text-shadow-*));
+}
+
+@utility text-stroke-color-* {
+  --tw-text-stroke-color: --value(--color-*);
 }
