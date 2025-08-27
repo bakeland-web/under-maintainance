@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-@theme inline {
+@theme inline static {
   --color-*: initial;
   --color-white: #fff;
   --color-black: #000;
@@ -43,20 +43,51 @@
   --font-upheaval-tt: var(--font-upheaval-tt), Arial, Helvetica, sans-serif;
   --font-pixellari: var(--font-pixellari), Arial, Helvetica, sans-serif;
   --text-shadow-*: initial;
-  --text-shadow-flat: 0 0;
-  --text-shadow-elevated: 0 0.1em 0.05em rgba(0, 0, 0, 0.17);
   --text-shadow-primary: 0 0.2em 0.2em rgba(0, 0, 0, 0.25);
+  --text-shadow-secondary: 0 0.1em 0.05em rgba(0, 0, 0, 0.17);
 }
 
 @utility text-stroke-* {
-  --tw-text-stroke-color: initial;
-  filter: drop-shadow(0 0.2125em var(--tw-text-stroke-color))
-    drop-shadow(-0.1em 0 var(--tw-text-stroke-color))
-    drop-shadow(0 -0.0875em var(--tw-text-stroke-color))
-    drop-shadow(0.1em 0 var(--tw-text-stroke-color))
-    drop-shadow(--value(--text-shadow-*));
+  --tw-text-stroke-width: --spacing(--value(integer));
+  --tw-text-stroke-width: --value([length]);
+  --tw-text-stroke-color: --value(--color-*, [color]);
 }
 
-@utility text-stroke-color-* {
-  --tw-text-stroke-color: --value(--color-*);
+@utility text-stroke {
+  --tw-text-stroke-width: 0.1em;
+  --tw-text-stroke-color: initial;
+  --tw-text-stroke-y-multiplier: 1.25;
+  --tw-text-stroke-shadow: 0 0;
+
+  --tw-text-stroke-top: var(--tw-text-stroke-width) 0
+    var(--tw-text-stroke-color);
+  --tw-text-stroke-right: 0 calc(var(--tw-text-stroke-width) * -0.875)
+    var(--tw-text-stroke-color);
+  --tw-text-stroke-bottom: 0
+    calc(var(--tw-text-stroke-width) * var(--tw-text-stroke-y-multiplier))
+    var(--tw-text-stroke-color);
+  --tw-text-stroke-left: calc(var(--tw-text-stroke-width) * -1) 0
+    var(--tw-text-stroke-color);
+
+  filter: drop-shadow(var(--tw-text-stroke-top))
+    drop-shadow(var(--tw-text-stroke-right))
+    drop-shadow(var(--tw-text-stroke-bottom))
+    drop-shadow(var(--tw-text-stroke-left))
+    drop-shadow(var(--tw-text-stroke-shadow));
+}
+
+@utility text-stroke-shadow {
+  @apply text-stroke;
+  --tw-text-stroke-shadow: var(--text-shadow-secondary);
+}
+
+@utility text-stroke-expanded {
+  @apply text-stroke;
+  --tw-text-stroke-y-multiplier: 2.125;
+}
+
+@utility text-stroke-expanded-shadow {
+  @apply text-stroke;
+  --tw-text-stroke-y-multiplier: 2.125;
+  --tw-text-stroke-shadow: var(--text-shadow-secondary);
 }
