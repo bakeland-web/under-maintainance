@@ -1,4 +1,4 @@
-export type Font = 'upheaval-tt' | 'pixellari';
+import type { Font } from '@/types';
 
 export type TextStroke =
   | 'none'
