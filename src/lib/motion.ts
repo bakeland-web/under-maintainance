@@ -1,0 +1,6 @@
+import type { Transition } from 'motion';
+
+export const SPRING_CONFIGS: Record<string, Transition> = {
+  smooth: { type: 'spring', mass: 1, stiffness: 600, damping: 15 },
+  snappy: { type: 'spring', mass: 1, stiffness: 4800, damping: 80 },
+};

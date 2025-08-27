@@ -91,3 +91,20 @@
   --tw-text-stroke-y-multiplier: 2.125;
   --tw-text-stroke-shadow: var(--text-shadow-secondary);
 }
+
+@utility clip-frame {
+  clip-path: polygon(
+    0% 0.1em,
+    0.1em 0.1em,
+    0.1em 0,
+    calc(100% - 0.1em) 0,
+    calc(100% - 0.1em) 0.1em,
+    100% 0.1em,
+    100% calc(100% - 0.1em),
+    calc(100% - 0.1em) calc(100% - 0.1em),
+    calc(100% - 0.1em) 100%,
+    0.1em 100%,
+    0.1em calc(100% - 0.1em),
+    0 calc(100% - 0.1em)
+  );
+}
