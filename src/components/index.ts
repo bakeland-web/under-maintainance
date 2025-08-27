@@ -1,1 +1,1 @@
-export { Typography, Button } from './atoms';
+export { Typography, Button, Card } from './atoms';

@@ -47,6 +47,8 @@
   --text-shadow-secondary: 0 0.1em 0.05em rgba(0, 0, 0, 0.17);
 }
 
+/* Text Stroke */
+
 @utility text-stroke-* {
   --tw-text-stroke-width: --spacing(--value(integer));
   --tw-text-stroke-width: --value([length]);
@@ -92,19 +94,28 @@
   --tw-text-stroke-shadow: var(--text-shadow-secondary);
 }
 
+/* Clip Path */
+
+@utility clip-frame-* {
+  --tw-clip-frame-size: --spacing(--value(integer));
+  --tw-clip-frame-size: --value([length]);
+}
+
 @utility clip-frame {
+  --tw-clip-frame-size: 2px;
   clip-path: polygon(
-    0% 0.1em,
-    0.1em 0.1em,
-    0.1em 0,
-    calc(100% - 0.1em) 0,
-    calc(100% - 0.1em) 0.1em,
-    100% 0.1em,
-    100% calc(100% - 0.1em),
-    calc(100% - 0.1em) calc(100% - 0.1em),
-    calc(100% - 0.1em) 100%,
-    0.1em 100%,
-    0.1em calc(100% - 0.1em),
-    0 calc(100% - 0.1em)
+    0% var(--tw-clip-frame-size),
+    var(--tw-clip-frame-size) var(--tw-clip-frame-size),
+    var(--tw-clip-frame-size) 0,
+    calc(100% - var(--tw-clip-frame-size)) 0,
+    calc(100% - var(--tw-clip-frame-size)) var(--tw-clip-frame-size),
+    100% var(--tw-clip-frame-size),
+    100% calc(100% - var(--tw-clip-frame-size)),
+    calc(100% - var(--tw-clip-frame-size))
+      calc(100% - var(--tw-clip-frame-size)),
+    calc(100% - var(--tw-clip-frame-size)) 100%,
+    var(--tw-clip-frame-size) 100%,
+    var(--tw-clip-frame-size) calc(100% - var(--tw-clip-frame-size)),
+    0 calc(100% - var(--tw-clip-frame-size))
   );
 }
