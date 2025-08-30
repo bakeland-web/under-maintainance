@@ -4,12 +4,12 @@ import { fontVariants, textStrokeVariants } from './Typography.utils';
 function Typography({
   font = 'pixellari',
   as: Component = 'span',
-  textStroke,
+  textStroke = 'none',
   className,
   children,
 }: Props) {
   const fontStyles = fontVariants[font];
-  const textStrokeStyles = textStrokeVariants[textStroke || 'none'];
+  const textStrokeStyles = textStrokeVariants[textStroke];
 
   return (
     <Component className={`${fontStyles} ${textStrokeStyles} ${className}`}>

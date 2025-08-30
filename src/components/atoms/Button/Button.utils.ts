@@ -136,16 +136,16 @@ export const motionVariants = (
     return {
       initial: {
         paddingBottom: '0.4em',
-        transition: SPRING_CONFIGS.smooth,
+        transition: SPRING_CONFIGS.bouncy,
       },
       hover: {
         paddingBottom: '0.6em',
-        transition: SPRING_CONFIGS.smooth,
+        transition: SPRING_CONFIGS.bouncy,
       },
       hoverWithDelay: {
         paddingBottom: '0.6em',
         transition: {
-          ...SPRING_CONFIGS.smooth,
+          ...SPRING_CONFIGS.bouncy,
           delay: 0.1,
         },
       },
@@ -158,16 +158,16 @@ export const motionVariants = (
   return {
     initial: {
       paddingBottom: '0.2em',
-      transition: SPRING_CONFIGS.smooth,
+      transition: SPRING_CONFIGS.bouncy,
     },
     hover: {
       paddingBottom: '0.4em',
-      transition: SPRING_CONFIGS.smooth,
+      transition: SPRING_CONFIGS.bouncy,
     },
     hoverWithDelay: {
       paddingBottom: '0.4em',
       transition: {
-        ...SPRING_CONFIGS.smooth,
+        ...SPRING_CONFIGS.bouncy,
         delay: 0.1,
       },
     },
