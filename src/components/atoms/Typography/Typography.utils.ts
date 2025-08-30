@@ -1,4 +1,5 @@
-import type { Font, TextStroke } from './Typography.types';
+import type { Font } from '@/types';
+import type { TextStroke } from './Typography.types';
 
 export const fontVariants: Record<Font, string> = {
   'upheaval-tt': 'font-upheaval-tt',

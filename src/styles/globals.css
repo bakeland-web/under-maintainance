@@ -56,20 +56,20 @@
 }
 
 @utility text-stroke {
-  --tw-text-stroke-width: 0.1em;
-  --tw-text-stroke-color: initial;
   --tw-text-stroke-y-multiplier: 1.25;
   --tw-text-stroke-shadow: 0 0;
 
-  --tw-text-stroke-top: var(--tw-text-stroke-width) 0
-    var(--tw-text-stroke-color);
-  --tw-text-stroke-right: 0 calc(var(--tw-text-stroke-width) * -0.875)
-    var(--tw-text-stroke-color);
+  --tw-text-stroke-top: var(--tw-text-stroke-width, 0.1em) 0
+    var(--tw-text-stroke-color, currentColor);
+  --tw-text-stroke-right: 0 calc(var(--tw-text-stroke-width, 0.1em) * -0.875)
+    var(--tw-text-stroke-color, currentColor);
   --tw-text-stroke-bottom: 0
-    calc(var(--tw-text-stroke-width) * var(--tw-text-stroke-y-multiplier))
-    var(--tw-text-stroke-color);
-  --tw-text-stroke-left: calc(var(--tw-text-stroke-width) * -1) 0
-    var(--tw-text-stroke-color);
+    calc(
+      var(--tw-text-stroke-width, 0.1em) * var(--tw-text-stroke-y-multiplier)
+    )
+    var(--tw-text-stroke-color, currentColor);
+  --tw-text-stroke-left: calc(var(--tw-text-stroke-width, 0.1em) * -1) 0
+    var(--tw-text-stroke-color, currentColor);
 
   filter: drop-shadow(var(--tw-text-stroke-top))
     drop-shadow(var(--tw-text-stroke-right))
