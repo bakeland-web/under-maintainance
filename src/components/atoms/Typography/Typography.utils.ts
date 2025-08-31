@@ -4,6 +4,7 @@ import type { TextStroke } from './Typography.types';
 export const fontVariants: Record<Font, string> = {
   'upheaval-tt': 'font-upheaval-tt',
   pixellari: 'font-pixellari',
+  'pixel-gothic': 'font-pixel-gothic',
 };
 
 export const textStrokeVariants: Record<TextStroke, string> = {

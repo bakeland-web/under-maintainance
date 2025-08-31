@@ -12,6 +12,11 @@ export const pixellari = localFont({
   variable: '--font-pixellari',
 });
 
+export const pixelGothic = localFont({
+  src: '../../public/fonts/PixelGothic.ttf',
+  variable: '--font-pixel-gothic',
+});
+
 export const metadata: Metadata = {
   title: 'Bakeland',
   description: '',
@@ -25,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${upheavalTT.variable} ${pixellari.variable} antialiased`}
+        className={`${upheavalTT.variable} ${pixellari.variable} ${pixelGothic.variable} antialiased`}
       >
         {children}
       </body>

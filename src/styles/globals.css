@@ -42,6 +42,7 @@
   --color-orange-400: #962a0f;
   --font-upheaval-tt: var(--font-upheaval-tt), Arial, Helvetica, sans-serif;
   --font-pixellari: var(--font-pixellari), Arial, Helvetica, sans-serif;
+  --font-pixel-gothic: var(--font-pixel-gothic), Arial, Helvetica, sans-serif;
   --text-shadow-*: initial;
   --text-shadow-primary: 0 0.2em 0.2em rgba(0, 0, 0, 0.25);
   --text-shadow-secondary: 0 0.1em 0.05em rgba(0, 0, 0, 0.17);
