@@ -102,20 +102,32 @@
 }
 
 @utility clip-frame {
-  --tw-clip-frame-size: 2px;
   clip-path: polygon(
-    0% var(--tw-clip-frame-size),
-    var(--tw-clip-frame-size) var(--tw-clip-frame-size),
-    var(--tw-clip-frame-size) 0,
-    calc(100% - var(--tw-clip-frame-size)) 0,
-    calc(100% - var(--tw-clip-frame-size)) var(--tw-clip-frame-size),
-    100% var(--tw-clip-frame-size),
-    100% calc(100% - var(--tw-clip-frame-size)),
-    calc(100% - var(--tw-clip-frame-size))
-      calc(100% - var(--tw-clip-frame-size)),
-    calc(100% - var(--tw-clip-frame-size)) 100%,
-    var(--tw-clip-frame-size) 100%,
-    var(--tw-clip-frame-size) calc(100% - var(--tw-clip-frame-size)),
-    0 calc(100% - var(--tw-clip-frame-size))
+    0% var(--tw-clip-frame-size, 2px),
+    var(--tw-clip-frame-size, 2px) var(--tw-clip-frame-size, 2px),
+    var(--tw-clip-frame-size, 2px) 0,
+    calc(100% - var(--tw-clip-frame-size, 2px)) 0,
+    calc(100% - var(--tw-clip-frame-size, 2px)) var(--tw-clip-frame-size, 2px),
+    100% var(--tw-clip-frame-size, 2px),
+    100% calc(100% - var(--tw-clip-frame-size, 2px)),
+    calc(100% - var(--tw-clip-frame-size, 2px))
+      calc(100% - var(--tw-clip-frame-size, 2px)),
+    calc(100% - var(--tw-clip-frame-size, 2px)) 100%,
+    var(--tw-clip-frame-size, 2px) 100%,
+    var(--tw-clip-frame-size, 2px) calc(100% - var(--tw-clip-frame-size, 2px)),
+    0 calc(100% - var(--tw-clip-frame-size, 2px))
+  );
+}
+
+@utility clip-frame-half {
+  clip-path: polygon(
+    0% var(--tw-clip-frame-size, 2px),
+    var(--tw-clip-frame-size, 2px) var(--tw-clip-frame-size, 2px),
+    var(--tw-clip-frame-size, 2px) 0,
+    calc(100% - var(--tw-clip-frame-size, 2px)) 0,
+    calc(100% - var(--tw-clip-frame-size, 2px)) var(--tw-clip-frame-size, 2px),
+    100% var(--tw-clip-frame-size, 2px),
+    100% 110%,
+    0 110%
   );
 }

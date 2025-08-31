@@ -7,4 +7,4 @@ export {
   ScrollCue,
   AppLink,
 } from './atoms';
-export { Input } from './molecules';
+export { Input, Tab } from './molecules';
