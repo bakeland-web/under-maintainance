@@ -6,3 +6,4 @@ export { default as Message } from './Message';
 export { default as ScrollCue } from './ScrollCue';
 export { default as AppLink } from './AppLink';
 export { default as Field } from './Field';
+export { default as Pin } from './Pin';
