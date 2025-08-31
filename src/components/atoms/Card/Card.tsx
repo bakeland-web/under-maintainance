@@ -1,11 +1,16 @@
 import { cn } from '@/lib/utils';
-import type { Props } from './Card.types';
+import type { CardProps } from './Card.types';
 import { colorVariants } from './Card.utils';
 import CardDecorTopLeft from '@/assets/svgs/card/decor-top-left.svg';
 import CardDecorTopRight from '@/assets/svgs/card/decor-top-right.svg';
 import CardDecorBottomLeft from '@/assets/svgs/card/decor-bottom-left.svg';
 
-function Card({ variant = 'wood', className, innerStyles, children }: Props) {
+function Card({
+  variant = 'wood',
+  className,
+  innerStyles,
+  children,
+}: CardProps) {
   const { background, corners, shadows } = colorVariants[variant];
 
   return (

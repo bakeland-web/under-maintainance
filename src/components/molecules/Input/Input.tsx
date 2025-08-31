@@ -4,7 +4,7 @@ import type { Font } from '@/types';
 
 type Variant = 'wood' | 'steel';
 
-type Props = {
+type InputProps = {
   variant?: Variant;
   font?: Font;
   type?: 'text' | 'password' | 'email';
@@ -23,7 +23,7 @@ function Input({
   disabled,
   children,
   ...props
-}: Props) {
+}: InputProps) {
   return (
     <Box
       variant={variant}

@@ -1,6 +1,6 @@
-import IconCaseEmpty from '@/assets/svgs/case/case-empty.svg';
-import IconCaseMid from '@/assets/svgs/case/case-mid.svg';
-import IconCaseFull from '@/assets/svgs/case/case-full.svg';
+import CaseEmpty from '@/assets/svgs/case/case-empty.svg';
+import CaseMid from '@/assets/svgs/case/case-mid.svg';
+import CaseFull from '@/assets/svgs/case/case-full.svg';
 import { Typography } from '@/components/atoms';
 import { cn } from '@/lib/utils';
 
@@ -24,9 +24,9 @@ function Case({ variant = 'empty', label, value }: CaseProps) {
       <Typography className='text-xl leading-none text-white'>
         {label}
       </Typography>
-      {variant === 'empty' && <IconCaseEmpty />}
-      {variant === 'mid' && <IconCaseMid />}
-      {variant === 'full' && <IconCaseFull />}
+      {variant === 'empty' && <CaseEmpty />}
+      {variant === 'mid' && <CaseMid />}
+      {variant === 'full' && <CaseFull />}
       <Typography
         textStroke='expandedWithShadow'
         className={cn(

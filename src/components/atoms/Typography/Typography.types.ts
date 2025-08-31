@@ -7,7 +7,7 @@ export type TextStroke =
   | 'expanded'
   | 'expandedWithShadow';
 
-export type Props = {
+export type TypographyProps = {
   font?: Font;
   as?: 'span' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
   textStroke?: TextStroke;

@@ -1,6 +1,6 @@
-import type { SurfaceProps } from './Button.types';
+import type { ButtonSurfaceProps } from './Button.types';
 
-function ButtonSurface({ colorStyles, children }: SurfaceProps) {
+function ButtonSurface({ colorStyles, children }: ButtonSurfaceProps) {
   return (
     <div
       style={{

@@ -30,24 +30,24 @@ export type ColorVariant = {
   corners: { light: string; dark: string };
 };
 
-export type Props = {
+export type ButtonProps = {
   variant?: Variant;
   color?: Color;
   baseColor?: BaseColor;
   children: React.ReactNode;
 } & Omit<HTMLMotionProps<'button'>, 'ref'>;
 
-export type BaseProps = {
+export type ButtonBaseProps = {
   baseColorStyles: BaseColorVariant;
 };
 
-export type FrameProps = {
+export type ButtonFrameProps = {
   variant: Variant;
   colorStyles: ColorVariant;
   children: React.ReactNode;
 };
 
-export type SurfaceProps = {
+export type ButtonSurfaceProps = {
   colorStyles: ColorVariant;
   children: React.ReactNode;
 };

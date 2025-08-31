@@ -23,7 +23,7 @@ export type ColorVariant = {
   corners: { light: string; dark: string };
 };
 
-export type Props = {
+export type SwitchProps = {
   activeOption: ActiveOption;
   options: Options;
   color?: Color;
@@ -31,15 +31,15 @@ export type Props = {
   onSwitch: (option: ActiveOption) => void;
 } & React.ComponentProps<'button'>;
 
-export type BaseProps = {
+export type SwitchBaseProps = {
   baseColorStyles: BaseColorVariant;
 };
 
-export type FrameProps = {
+export type SwitchFrameProps = {
   colorStyles: ColorVariant;
 };
 
-export type SurfaceProps = {
+export type SwitchSurfaceProps = {
   activeOption: ActiveOption;
   colorStyles: ColorVariant;
 };

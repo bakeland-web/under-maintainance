@@ -1,10 +1,10 @@
 'use client';
 
 import { motion } from 'motion/react';
-import type { FrameProps } from './Button.types';
+import type { ButtonFrameProps } from './Button.types';
 import { motionVariants } from './Button.utils';
 
-function ButtonFrame({ variant, colorStyles, children }: FrameProps) {
+function ButtonFrame({ variant, colorStyles, children }: ButtonFrameProps) {
   const variants = motionVariants(variant);
 
   return (

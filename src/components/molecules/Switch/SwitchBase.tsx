@@ -1,6 +1,6 @@
-import type { BaseProps } from './Switch.types';
+import type { SwitchBaseProps } from './Switch.types';
 
-function SwitchBase({ baseColorStyles }: BaseProps) {
+function SwitchBase({ baseColorStyles }: SwitchBaseProps) {
   return (
     <div
       style={{ boxShadow: `inset 0 -2px ${baseColorStyles.shadow}` }}

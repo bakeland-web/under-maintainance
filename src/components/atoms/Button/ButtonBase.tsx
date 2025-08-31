@@ -1,6 +1,6 @@
-import type { BaseProps } from './Button.types';
+import type { ButtonBaseProps } from './Button.types';
 
-function ButtonBase({ baseColorStyles }: BaseProps) {
+function ButtonBase({ baseColorStyles }: ButtonBaseProps) {
   return (
     <div
       style={{ boxShadow: `inset 0 -0.1em ${baseColorStyles.shadow}` }}

@@ -1,14 +1,14 @@
 'use client';
 
 import { cn } from '@/lib/utils';
-import type { SurfaceProps } from './Switch.types';
+import type { SwitchSurfaceProps } from './Switch.types';
 import { motion } from 'motion/react';
 import { springConfigs } from './Switch.utils';
 
 function SwitchSurface({
   activeOption,
   colorStyles: { frame, surface, shadows, corners },
-}: SurfaceProps) {
+}: SwitchSurfaceProps) {
   return (
     <div className='absolute top-1 left-0.5 z-10 grid h-10 w-[calc(100%_-_theme(spacing.1))] grid-cols-2'>
       {/* Left Section */}

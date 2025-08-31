@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils';
-import type { Props } from './Box.types';
+import type { BoxProps } from './Box.types';
 import { sizeVariants, colorVariants } from './Box.utils';
 
 function Box({
@@ -9,7 +9,7 @@ function Box({
   className,
   innerStyles,
   children,
-}: Props) {
+}: BoxProps) {
   const sizeStyles = sizeVariants[size];
   const { backgrounds, corner, shadow } = colorVariants[variant];
 

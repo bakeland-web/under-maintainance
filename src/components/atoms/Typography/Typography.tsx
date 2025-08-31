@@ -1,4 +1,4 @@
-import type { Props } from './Typography.types';
+import type { TypographyProps } from './Typography.types';
 import { fontVariants, textStrokeVariants } from './Typography.utils';
 
 function Typography({
@@ -7,7 +7,7 @@ function Typography({
   textStroke = 'none',
   className,
   children,
-}: Props) {
+}: TypographyProps) {
   const fontStyles = fontVariants[font];
   const textStrokeStyles = textStrokeVariants[textStroke];
 

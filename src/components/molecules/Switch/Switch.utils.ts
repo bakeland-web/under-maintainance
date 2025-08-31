@@ -134,7 +134,7 @@ export const colorVariants: Record<
   },
 };
 
-export const springConfigs: Record<string, Transition> = {
+export const springConfigs = {
   bouncy: { type: 'spring', mass: 1, stiffness: 675, damping: 30 },
   snappy: { type: 'spring', mass: 1, stiffness: 2400, damping: 30 },
-};
+} satisfies Record<string, Transition>;

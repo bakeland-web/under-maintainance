@@ -6,7 +6,7 @@ export type ColorVariant = {
   shadows: { light: string; medium: string; dark: string };
 };
 
-export type Props = {
+export type CardProps = {
   variant?: Variant;
   className?: string;
   innerStyles?: string;

@@ -4,7 +4,7 @@ import SwitchBase from './SwitchBase';
 import SwitchFrame from './SwitchFrame';
 import SwitchSurface from './SwitchSurface';
 import { baseColorVariants, colorVariants } from './Switch.utils';
-import type { Props } from './Switch.types';
+import type { SwitchProps } from './Switch.types';
 import Typography from '@/components/atoms/Typography';
 
 function Switch({
@@ -16,7 +16,7 @@ function Switch({
   onSwitch,
   onClick,
   ...props
-}: Props) {
+}: SwitchProps) {
   const baseColorStyles = useMemo(
     () => baseColorVariants[baseColor],
     [baseColor]

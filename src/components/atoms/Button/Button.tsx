@@ -6,7 +6,7 @@ import ButtonBase from './ButtonBase';
 import ButtonFrame from './ButtonFrame';
 import ButtonSurface from './ButtonSurface';
 import { baseColorVariants, colorVariants } from './Button.utils';
-import type { MotionVariant, Props } from './Button.types';
+import type { MotionVariant, ButtonProps } from './Button.types';
 import { motion } from 'motion/react';
 import Typography from '@/components/atoms/Typography';
 
@@ -17,7 +17,7 @@ function Button({
   className,
   children,
   ...props
-}: Props) {
+}: ButtonProps) {
   const [variantName, setVariantName] = useState<MotionVariant>('initial');
   const baseColorStyles = useMemo(
     () => baseColorVariants[baseColor],

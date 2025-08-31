@@ -8,7 +8,7 @@ export type ColorVariant = {
   shadow: string;
 };
 
-export type Props = {
+export type BoxProps = {
   variant?: Variant;
   size?: SizeVariant;
   isSelected?: boolean;
