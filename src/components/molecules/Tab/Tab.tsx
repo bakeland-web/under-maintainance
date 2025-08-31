@@ -23,13 +23,13 @@ function Tab<T extends string>({
       onClick={() => onTabClick(value)}
       className={cn('h-[33px] min-w-[104px] cursor-pointer', className)}
     >
-      <div className={cn('clip-frame-half bg-black p-0.5 pb-0', className)}>
+      <div className={cn('clip-frame-top bg-black p-0.5 pb-0', className)}>
         <div
           style={{
             boxShadow: `inset 0 2px ${shadows.light}, inset -2px 0 ${shadows.dark}, inset 2px 0 ${shadows.light} ${isActive ? `, 0 2px ${background.var}` : ''}`,
           }}
           className={cn(
-            `clip-frame-half relative h-full w-full px-2.5 pt-0.5 pb-px before:absolute before:top-[2px] before:left-[2px] before:inline-block before:h-[2px] before:w-[2px] before:content-[""] ${corner}`,
+            `clip-frame-top relative h-full w-full px-2.5 pt-0.5 pb-px before:absolute before:top-[2px] before:left-[2px] before:inline-block before:h-[2px] before:w-[2px] before:content-[""] ${corner}`,
             background.class
           )}
         >

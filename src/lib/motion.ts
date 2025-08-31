@@ -1,4 +1,4 @@
-import type { Transition } from 'motion';
+import type { Transition } from 'motion/react';
 
 export const SPRING_CONFIGS: Record<string, Transition> = {
   smooth: { type: 'spring', mass: 1, stiffness: 80, damping: 20 },
