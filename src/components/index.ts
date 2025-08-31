@@ -6,5 +6,6 @@ export {
   Message,
   ScrollCue,
   AppLink,
+  Field,
 } from './atoms';
 export { Input, Tab, Switch, Case } from './molecules';
