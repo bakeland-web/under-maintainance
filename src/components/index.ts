@@ -10,4 +10,4 @@ export {
   Pin,
   Building,
 } from './atoms';
-export { Input, Tab, Switch, Case } from './molecules';
+export { Input, Tab, Switch, Case, Land } from './molecules';
