@@ -45,8 +45,10 @@ function Input({
           'focus:not-placeholder-shown:text-shadow-primary w-full pl-0.5 text-xl leading-[1.1em] text-white outline-none',
           font === 'pixellari' ? 'font-pixellari' : 'font-upheaval-tt',
           variant === 'wood' ? 'placeholder-wood-100' : 'placeholder-steel-100',
+          disabled && 'cursor-not-allowed',
           inputStyles
         )}
+        disabled={disabled}
         {...props}
       />
       <div className='shrink-0'>{children}</div>
