@@ -6,10 +6,15 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "validate-env": "node scripts/validate-env.js",
+    "setup-service-account": "node scripts/setup-service-account.js",
+    "generate-env": "node scripts/generate-env-from-service-account.js"
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "firebase": "^12.3.0",
+    "firebase-admin": "^13.5.0",
     "motion": "^12.23.12",
     "next": "15.5.0",
     "react": "19.1.0",

@@ -4,9 +4,9 @@ import { cn } from '@/lib/utils';
 
 type NextLink = Omit<
   React.AnchorHTMLAttributes<HTMLAnchorElement>,
-  keyof LinkProps<any>
+  keyof LinkProps
 > &
-  LinkProps<any> & {
+  LinkProps & {
     children?: React.ReactNode | undefined;
   } & React.RefAttributes<HTMLAnchorElement>;
 

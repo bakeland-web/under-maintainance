@@ -1,3 +1,5 @@
+import { redirect } from 'next/navigation';
+
 export default function App() {
-  return <div>App</div>;
+  redirect('/landing');
 }
