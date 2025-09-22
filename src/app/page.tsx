@@ -81,10 +81,6 @@ export default function LandingPage() {
           {/* BAKE LAND Logo */}
           <div className="relative mb-2">
             <div className="relative">
-              {/* Logo Background Effect */}
-              <div className="absolute inset-0 animate-pulse">
-                <div className="h-32 w-80 rounded-lg bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 opacity-60 blur-sm sm:h-48 sm:w-[500px] md:h-56 md:w-[650px] lg:h-80 lg:w-[1000px]"></div>
-              </div>
               
               {/* Logo Image - Fixed aspect ratio and mobile sizing */}
               <div className="relative flex items-center justify-center">
