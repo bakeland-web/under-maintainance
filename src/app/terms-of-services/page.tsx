@@ -21,8 +21,8 @@ export default function TermsOfServicesPage() {
         <Typography
           as="h1"
           font="pixellari"
-          className="mb-6 text-3xl sm:text-4xl text-white text-center"
-          textStroke="normalWithShadow"
+          className="mb-6 text-3xl sm:text-4xl text-white text-center font-normal"
+          textStroke="none"
         >
           Terms of Service
         </Typography>

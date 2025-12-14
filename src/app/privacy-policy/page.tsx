@@ -20,9 +20,9 @@ export default function PrivacyPolicyPage() {
       <div className="relative z-20 flex min-h-screen flex-col items-center justify-center px-4 py-12">
         <Typography
           as="h1"
-          font="pixel-gothic"
-          className="mb-6 text-3xl sm:text-4xl text-white text-center"
-          textStroke="normalWithShadow"
+          font="pixellari"
+          className="mb-6 text-3xl sm:text-4xl text-white text-center font-normal"
+          textStroke="none"
         >
           Privacy Policy
         </Typography>
