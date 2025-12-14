@@ -180,9 +180,9 @@ export default function LandingPage() {
         {/* Footer */}
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center">
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-xs sm:text-sm text-white/80 font-pixellari">
-            <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="/terms-of-services" className="hover:text-white transition-colors">Terms of Service</a>
             <span className="hidden sm:inline">|</span>
-            <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a>
             <span className="hidden sm:inline">|</span>
             <span>© 2025 8 Bit Studio Ltd. All rights reserved.</span>
           </div>
