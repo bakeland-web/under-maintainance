@@ -141,7 +141,7 @@ export default function LandingPage() {
               color="grey"
               baseColor="steel"
               className="h-[8vw] w-[8vw] min-h-[48px] min-w-[48px] max-h-[60px] max-w-[60px] sm:h-12 sm:w-12"
-              onClick={() => window.open('https://discord.gg/BVnF4fdD', '_blank')}
+              onClick={() => window.open('https://discord.gg/6MSDGx4h6p', '_blank')}
             >
               {/* Discord Icon */}
               <svg
