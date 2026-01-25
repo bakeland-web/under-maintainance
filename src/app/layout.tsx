@@ -19,32 +19,36 @@ export const pixelGothic = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://bakeland.xyz'),
+
   title: 'Bakeland - 2D MMORPG',
   description:
     'Explore a vast world where players must join competing factions to secure limited resources. Farm outlawed crops, raid enemy bases & discover the absurd lore behind Bakeland.',
+
+  applicationName: 'Bakeland',
+
   keywords: ['Bakeland', 'MMORPG', '2D MMORPG', 'gaming', 'factions', 'farming', 'raiding'],
   authors: [{ name: '8 Bit Studio Ltd' }],
   creator: '8 Bit Studio Ltd',
   publisher: '8 Bit Studio Ltd',
+
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
   },
+
+  alternates: {
+    canonical: 'https://bakeland.xyz/',
+  },
+
   icons: {
     icon: [
       { url: '/favicon.ico' },
       { url: '/favicon.png', type: 'image/png' },
     ],
-    shortcut: '/favicon.ico',
     apple: '/favicon.png',
   },
+
   openGraph: {
     title: 'Bakeland - 2D MMORPG',
     description:
@@ -52,16 +56,22 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'Bakeland',
     locale: 'en_US',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bakeland - 2D MMORPG',
+      },
+    ],
   },
+
   twitter: {
     card: 'summary_large_image',
     title: 'Bakeland - 2D MMORPG',
     description:
       'Explore a vast world where players must join competing factions to secure limited resources. Farm outlawed crops, raid enemy bases & discover the absurd lore behind Bakeland.',
-  },
-  metadataBase: new URL('https://bakeland.xyz'),
-  alternates: {
-    canonical: '/',
+    images: ['/og-image.png'],
   },
 };
 
@@ -72,11 +82,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <head>
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" href="/favicon.png" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-      </head>
       <body
         className={`${upheavalTT.variable} ${pixellari.variable} ${pixelGothic.variable} antialiased`}
       >
