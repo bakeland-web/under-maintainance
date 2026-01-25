@@ -19,8 +19,9 @@ export const pixelGothic = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Bakeland',
-  description: '',
+  title: 'Bakeland - 2D MMORPG',
+  description:
+    'Explore a vast world where players must join competing factions to secure limited resources. Farm outlawed crops, raid enemy bases & discover the absurd lore behind Bakeland.',
   icons: {
     icon: [
       { url: '/favicon.ico' },
@@ -28,6 +29,19 @@ export const metadata: Metadata = {
     ],
     shortcut: '/favicon.ico',
     apple: '/favicon.png',
+  },
+  openGraph: {
+    title: 'Bakeland - 2D MMORPG',
+    description:
+      'Explore a vast world where players must join competing factions to secure limited resources. Farm outlawed crops, raid enemy bases & discover the absurd lore behind Bakeland.',
+    type: 'website',
+    siteName: 'Bakeland',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Bakeland - 2D MMORPG',
+    description:
+      'Explore a vast world where players must join competing factions to secure limited resources. Farm outlawed crops, raid enemy bases & discover the absurd lore behind Bakeland.',
   },
 };
 
