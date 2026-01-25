@@ -62,6 +62,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: 'Bakeland - 2D MMORPG',
+        type: 'image/png',
       },
     ],
   },
@@ -71,7 +72,12 @@ export const metadata: Metadata = {
     title: 'Bakeland - 2D MMORPG',
     description:
       'Explore a vast world where players must join competing factions to secure limited resources. Farm outlawed crops, raid enemy bases & discover the absurd lore behind Bakeland.',
-    images: ['/og-image.png'],
+    images: [
+      {
+        url: '/og-image.png',
+        alt: 'Bakeland - 2D MMORPG',
+      },
+    ],
   },
 };
 
