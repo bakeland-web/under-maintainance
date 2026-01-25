@@ -22,6 +22,21 @@ export const metadata: Metadata = {
   title: 'Bakeland - 2D MMORPG',
   description:
     'Explore a vast world where players must join competing factions to secure limited resources. Farm outlawed crops, raid enemy bases & discover the absurd lore behind Bakeland.',
+  keywords: ['Bakeland', 'MMORPG', '2D MMORPG', 'gaming', 'factions', 'farming', 'raiding'],
+  authors: [{ name: '8 Bit Studio Ltd' }],
+  creator: '8 Bit Studio Ltd',
+  publisher: '8 Bit Studio Ltd',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   icons: {
     icon: [
       { url: '/favicon.ico' },
@@ -36,12 +51,17 @@ export const metadata: Metadata = {
       'Explore a vast world where players must join competing factions to secure limited resources. Farm outlawed crops, raid enemy bases & discover the absurd lore behind Bakeland.',
     type: 'website',
     siteName: 'Bakeland',
+    locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Bakeland - 2D MMORPG',
     description:
       'Explore a vast world where players must join competing factions to secure limited resources. Farm outlawed crops, raid enemy bases & discover the absurd lore behind Bakeland.',
+  },
+  metadataBase: new URL('https://bakeland.xyz'),
+  alternates: {
+    canonical: '/',
   },
 };
 

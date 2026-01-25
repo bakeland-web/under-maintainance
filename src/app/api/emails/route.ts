@@ -1,14 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { adminDb } from '@/lib/firebase-admin';
+import { getAdminDb } from '@/lib/firebase-admin';
 import { isValidEmail, normalizeEmail } from '@/lib/emailValidation';
-
-// Check if Firebase admin is properly initialized
-if (!adminDb) {
-  console.error('Firebase Admin not initialized. Check environment variables.');
-}
 
 export async function POST(request: NextRequest) {
   try {
+    const adminDb = getAdminDb();
     if (!adminDb) {
       return NextResponse.json(
         { success: false, message: 'Database not available. Please check configuration.' },
@@ -62,6 +58,7 @@ export async function POST(request: NextRequest) {
 
 export async function GET() {
   try {
+    const adminDb = getAdminDb();
     if (!adminDb) {
       return NextResponse.json(
         { success: false, message: 'Database not available. Please check configuration.' },
